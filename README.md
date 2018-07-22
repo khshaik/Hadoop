@@ -262,15 +262,3 @@ If your data is sitting on a filesystem, web server, or any other system accessi
 your Hadoop cluster, you’ll need a way to periodically pull that data into Hadoop.
 
 e. Creation of automatic, redundant backups.
-
-
-
-
- 
-
-
-
-
-
-
-
