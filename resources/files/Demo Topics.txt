@@ -1,0 +1,69 @@
+
+Hadoop (25-30 Min)
+Problem description
+Hadoop explanation
+Demo
+What’s in it for Planon
+
+
+Problem: Table Comparison
+--------
+Data on web growing enormously causing problems: Storage, Processing => Complexity
+a. Variety
+b. Volume
+c. Velocity 
+d. Speed 
+e. Transfer rate
+f. Scale
+c. Meaningful extracts
+
+Survival of the fittest: Best informed decisions based on past histroical trends
+
+Cloudera, Teraddata, HortonWorks.
+
+Hadoop:
+-------
+Data grows so large in terms of peta bytes than it can't be stored and processed in 
+single system. Scale out using commodity hardware to meet both storage and processing
+requirements.
+
+Inception
+
+Components - HDFS, MapReduce (Namenode, Secondary Namenode, Datanode, Jobtracker, Tasktracker)
+
+Features:
+---------
+a. Offline batch processing instead of online transactions.
+b. Moving code to data.
+c. Scale-out instead of Scale-up : Cost-effective scalability using commodity hardware. 
+d. Key/Value pairs instead of Relational tables
+e. File-based where clients can mostly append data to existing files.
+g. Write once read many access-model.
+h. Replication - Fault tolerant
+
+
+Not a replacement for RDBMS, DW - Table Comparison.
+HBase, Hive, Pig, Zookeeper, Mahout.
+
+Usage of Hadoop in the Enterprise:
+-----------------------------------
+a. Store daily logs using Flume/ Chukwa
+b. Process data extracted from datawarehouse/ database.
+c. Pushing system log messages into HDFS – Flume, Chukwa, Scribe.
+d. An automated mechanism to copy files into HDFS. Automate the process by which files on remote servers are copied into HDFS - File Slurper.
+e. Scheduling regular ingress activities – Oozie.
+f. Database ingress with MapReduce.
+ 
+
+Demo:
+-----
+Anagram wordcount
+Movies
+Comparison with normal java program.
+
+Whats in it for Planon
+-----------------------:
+a. Sqoop to export data from MSSQL/ Oracle and process the data in Hadoop.
+b. MapReduce program to export and process the data.
+
+Setup Hadoop on Windows

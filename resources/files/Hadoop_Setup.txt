@@ -1,0 +1,80 @@
+<property>
+    <name>dfs.name.dir</name>
+    <value>/usr/mydir/dfs/logs</value>
+ </property>
+ <property>
+    <name>dfs.data.dir</name>
+    <value>usr/mydir/dfs/data</value>
+ </property>
+ 
+ 
+ <configuration>
+<property>
+    <name>mapred.job.tracker</name>
+    <value>Ruhaani:8021</value>
+  </property>
+</configuration>
+
+chmod 0755  C:/Softwares/Cygwin/tmp/hadoop-sshd/mapred/local/tasktracker
+
+chmod 0700 C:/Softwares/Cygwin/tmp/hadoop-Avtar/mapred/system
+
+C:\Softwares\Cygwin\usr\local\hadoop\bin>javac -cp C:\Softwares\Cygwin\usr\local\hadoop\bin\hadoop-core-1.0.4.jar -d wordcount_classes WordCount.java
+
+C:\Softwares\Cygwin\usr\local\hadoop\bin>jar -cvf usr/kashai/WordCount.jar -C wordcount_classes/ .
+
+===================================================================================================
+
+Avtar@Ruhaani /usr/local/hadoop
+$ export PATH=$PATH:"/cygdrive/c/java/jdk1.7.0_11/bin/"
+
+Avtar@Ruhaani /usr/local/hadoop
+$ javac -classpath C:/cygwin/usr/local/hadoop/hadoop-core-1.0.4.jar -d bin/wordcount_classes WordCount.java
+
+Avtar@Ruhaani /usr/local/hadoop
+$ jar -cvf usr/kashai/wordcount.jar -C bin/wordcount_classes/ .
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -ls bin/usr/kashai/wordcount/input usr/kashai/wordcount/input/file01.txt usr/kashai/wordcount/input/file02.txt
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/kashai/wordcount/input/file01.txt
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/kashai/wordcount/input/file02.txt
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop jar usr/kashai/wordcount.jar org.myorg.WordCount usr/kashai/wordcount/input usr/kashai/wordcount/output
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/kashai/wordcount/output/out/part-00000
+
+======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

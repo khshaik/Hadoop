@@ -1,0 +1,163 @@
+Add below swc file to File to flex project:
+E:\Flex_Builder\Robotlegs\bin\robotlegs-framework-v1.5.2.swc
+
+
+http://www.youtube.com/watch?v=77izgIZElRw
+
+Microsoft Windows [Version 6.1.7600]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Avtar>d:
+
+D:\>cd D:\GridComputing\src\akka
+
+D:\GridComputing\src\akka>cd lib
+
+D:\GridComputing\src\akka\lib>cd akka-2.1.0
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>set AKKA_HOME=%cd%
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>echo %AKKA_HOME%
+D:\GridComputing\src\akka\lib\akka-2.1.0
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>set JAVA_HOME=C:\Program Files\Java1.7.0_11
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>set PATH=%PATH%;%JAVA_HOME%/bin
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>java -version
+java version "1.7.0_11"
+Java(TM) SE Runtime Environment (build 1.7.0_11-b21)
+Java HotSpot(TM) Client VM (build 23.6-b04, mixed mode, sharing)
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>
+
+D:\GridComputing\src\akka\lib\akka-2.1.0>
+
+
+\tmp\hadoop-Avtar\dfs\name
+
+ 
+    <property>
+    <name>dfs.name.dir</name>
+    <value>/usr/mydir/dfs/logs</value>
+ </property>
+ <property>
+    <name>dfs.data.dir</name>
+    <value>usr/mydir/dfs/data</value>
+ </property>
+ 
+ 
+ <configuration>
+<property>
+    <name>mapred.job.tracker</name>
+    <value>Ruhaani:8021</value>
+  </property>
+</configuration>
+
+chmod 0755  C:/Softwares/Cygwin/tmp/hadoop-sshd/mapred/local/tasktracker
+
+chmod 0700 C:/Softwares/Cygwin/tmp/hadoop-Avtar/mapred/system
+
+C:\Softwares\Cygwin\usr\local\hadoop\bin>javac -cp C:\Softwares\Cygwin\usr\local\hadoop\bin\hadoop-core-1.0.4.jar -d wordcount_classes WordCount.java
+
+C:\Softwares\Cygwin\usr\local\hadoop\bin>jar -cvf usr/kashai/WordCount.jar -C wordcount_classes/ .
+
+===================================================================================================
+
+Avtar@Ruhaani /usr/local/hadoop
+$ export PATH=$PATH:"/cygdrive/c/java/jdk1.7.0_11/bin/"
+
+Avtar@Ruhaani /usr/local/hadoop
+$ javac -classpath C:/cygwin/usr/local/hadoop/hadoop-core-1.0.4.jar -d bin/wordcount_classes WordCount.java
+
+Avtar@Ruhaani /usr/local/hadoop
+$ jar -cvf usr/kashai/wordcount.jar -C bin/wordcount_classes/ .
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -ls bin/usr/kashai/wordcount/input usr/kashai/wordcount/input/file01.txt usr/kashai/wordcount/input/file02.txt
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/kashai/wordcount/input/file01.txt
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/kashai/wordcount/input/file02.txt
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop jar usr/kashai/wordcount.jar org.myorg.WordCount usr/kashai/wordcount/input usr/kashai/wordcount/output
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/kashai/wordcount/output/out/part-00000
+
+======================================================================================================
+
+Hadoop - Yahoo, Google 
+Isolated/ Flat/ Distributed (Cluster)
+Architecture
+HDFS
+Map/Reduce - Hadoop, Akka
+Relevance to GridComputing, CloudComputing with differences
+Advantages
+Disadvantages/ Limitations (Parellel not Serial)
+Examples
+
+http://searchcloudcomputing.techtarget.com/definition/MapReduce
+http://www.theserverside.com/news/1321219/Why-Should-You-Care-About-MapReduce
+http://www.javacodegeeks.com/2011/05/mapreduce-soft-introduction.html
+http://stackoverflow.com/questions/5260212/simple-java-map-reduce-framework
+
+http://developer.yahoo.com/hadoop/tutorial/module1.html
+
+http://hadoop.apache.org/
+http://hadoop.apache.org/docs/r0.20.2/quickstart.html
+http://hadoop.apache.org/docs/r0.17.0/mapred_tutorial.html
+http://www.youtube.com/watch?v=NXCIItzkn3E
+
+http://blog.sqltrainer.com/2012/01/installing-and-configuring-apache.html
+http://www.javaworld.com/javaworld/jw-09-2008/jw-09-hadoop.html
+http://java.dzone.com/articles/hadoop-basics-creating
+http://www.higherpass.com/java/Tutorials/Building-Hadoop-Mapreduce-Jobs-In-Java/
+http://wiki.rootzwiki.com/Step_by_step_guide_how_to_install_cygwin
+
+
+http://localhost:50070/
+http://localhost:50030/jobtracker.jsp
+http://code.google.com/p/hadoop-map-reduce-examples/
+
+http://www.gridgain.com/download/
+http://www.gridgain.com/
+http://www.webopedia.com/TERM/G/gridgrain.html
+https://github.com/gridgain/gridgain
+http://52north.org/communities/geoprocessing/wps/tutorials/WPSGridComputing.html
+http://www.gridgain.com/book/book.html
+
+http://www.infoq.com/presentations/Grid-Gain-vs-Hadoop-Why-Elephants-Cant-Fly
+http://www.theserverside.com/discussions/thread.tss?thread_id=61905
+http://wiki.apache.org/hadoop/HadoopVsGridGain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
