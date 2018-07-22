@@ -1,0 +1,18 @@
+Set MAVEN_HOME in Environment variables as "C:\maven-3.0.5\apache-maven-3.0.5"
+
+Copy hadoop-core-1.0.4 to C:\maven-3.0.5\apache-maven-3.0.5\lib.
+
+Modify pom.xml to include the location of above jar file.
+
+Inclue above entry in Path variable as %MAVEN_HOME%\bin;
+
+C:\cygwin\usr\local\hadoop\src\examples\wordcount>mvn compile
+
+C:\cygwin\usr\local\hadoop\src\examples\wordcount>mvn package
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop jar src/examples/wordcount/wordcount.jar org.myorg.WordCount usr/kashai/wordcount/input usr/kashai/wordcount/output
+
+
+Avtar@Ruhaani /usr/local/hadooph
+$ bin/hadoop dfs -cat src/examples/new/wordcount/test-data/output/part-00000
