@@ -1,0 +1,48 @@
+Avtar@Ruhaani /usr/local/hadoop
+$ export PATH=$PATH:"/cygdrive/c/java/jdk1.7.0_11/bin/"
+
+Avtar@Ruhaani /usr/local/hadoop
+$ set classpath="C:/cygwin/usr/local/hadoop/src/examples/movies/hadoop-core-1.0.4.jar";
+
+Avtar@Ruhaani /usr/local/hadoop
+$ javac C:/cygwin/usr/local/hadoop/src/examples/movies/ImdbRecordParser.java -d c:/cygwin/usr/local/hadoop/src/examples/movies/classes/
+
+Avtar@Ruhaani /usr/local/hadoop
+$ javac -classpath C:/cygwin/usr/local/hadoop/src/examples/movies/hadoop-core-1.0.4.jar C:/cygwin/usr/local/hadoop/src/examples/movies/*.java -d c:/cygwin/usr/local/hadoop/src/examples/movies/imdb/classes/
+
+Avtar@Ruhaani /usr/local/hadoop
+$ jar -cvf c:/cygwin/usr/local/hadoop/src/examples/movies/movies.jar -C c:/cygwin/usr/local/hadoop/src/examples/movies/classes/ .
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop jar c:/cygwin/usr/local/hadoop/src/examples/movies/movies.jar imdb.ImdbDriver C:/cygwin/usr/local/hadoop/src/examples/movies/data/input C:/cygwin/usr/local/hadoop/src/examples/movies/data/output
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop jar c:/cygwin/usr/local/hadoop/src/examples/movies/movies.jar imdb.ImdbDriver -h C:/cygwin/usr/local/hadoop/src/examples/movies/data/input C:/cygwin/usr/local/hadoop/src/examples/movies/data/output
+
+Avtar@Ruhaani /usr/local/hadoop
+$ bin/hadoop dfs -cat usr/usr/local/hadoop/movies/output/out/part-00000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
